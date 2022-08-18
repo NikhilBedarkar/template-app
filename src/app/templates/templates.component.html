@@ -1,0 +1,6 @@
+<div class="container">
+  <span class="h2 m-10">Select a template</span>
+    <div class="card mt-3" *ngFor="let template of templates" style="width: 18rem;">
+      <img [src]="template['path']"  class="card-img-top" alt="template.name" [routerLink]="['templates',template['name']]">
+    </div>
+    </div>

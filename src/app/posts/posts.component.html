@@ -1,0 +1,10 @@
+<div class="p">
+  <div class="p-title">
+    <span class="h2 m-10">Posts</span>
+  </div>
+      <div class="p-offer card " *ngFor="let post of posts">
+        <img [src]="getPath(post.templateName)"  class="p-offer-img" [alt]="post.templateName">
+        <span class="p-offer-title">{{post.title}}</span>
+        <span class="p-offer-discount">{{post.discount}}</span>
+      </div>
+      </div>
