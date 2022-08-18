@@ -7,16 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'template-app';
-  templates=[{name:"teal",
-    path: '../assets/Teal.png'},
-    {name:"YellowFruit",
-  path: '../assets/YellowFruit.png'},
+  templates=[
   {name:"houseOffer",
   path: '../assets/houseOffer.png'},
   {name:"xmaxDesign",
   path: '../assets/xmaxDesign.png'},
   {name:"spiderDesign",
   path: '../assets/spiderDesign.png'},
+  {name:"teal",
+    path: '../assets/Teal.png'},
+    {name:"YellowFruit",
+  path: '../assets/YellowFruit.png'},
   ];
   posts = [{
     templateName:"teal",

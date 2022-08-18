@@ -3,13 +3,28 @@
     flex-direction: column;
     align-items: center;
 }
+.p-body{
+    display: flex;
+    flex-direction: column;
+}
+.p-offer-details{
+    flex: 1;
+}
 .p-title{
     display: flex;
     height: 10%;
 }
+.p-list{
+    display: flex;
+}
+.offer-container{
+    display: flex;
+    flex: 3;
+   align-content: center;
+}
 .p-offer{
     display: flex;
-    width: 40%;
+    width: 60%;
     margin: 10px;
 }
 .p-offer-title{
@@ -21,7 +36,7 @@ text-align: center;
 font-size: 40px;
 }
 .p-offer-discount{
-    color: blue;
+    color: red;
     position: absolute;
     top: 60%;
     width: 100%;

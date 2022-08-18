@@ -1,0 +1,9 @@
+<form class="form-offer container" #f="ngForm" (ngSubmit)="editPost(f.value)">
+    <h2 class="form-offer-heading">Edit Offer Details</h2>
+    <label for="offerTitle" class="form-offer-title">Offer Title</label>
+    <input type="text" id="offerTitle" name="Title" ngModel [(ngModel)]="oldTitle" class="form-control input" placeholder="Offer Title" required autofocus>
+    <label for="offerDiscount" class="form-offer-discount">Offer Discount</label>
+    <input type="text" id="offerDiscount" name="Discount" [(ngModel)]="oldDiscount" ngModel class="form-control input" placeholder="Offer Discount" required>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+  </form>
+

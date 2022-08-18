@@ -2,9 +2,29 @@
   <div class="p-title">
     <span class="h2 m-10">Posts</span>
   </div>
-      <div class="p-offer card " *ngFor="let post of posts">
+  <div class="p-body">
+    <div *ngIf="postflag">No Posts available to display!</div>
+    <div class="p-list" *ngFor="let post of posts;let indexOfpost=index;">
+    <!-- container for offer -->
+    <div class="offer-container">
+      <div class="p-offer card ">
         <img [src]="getPath(post.templateName)"  class="p-offer-img" [alt]="post.templateName">
         <span class="p-offer-title">{{post.title}}</span>
         <span class="p-offer-discount">{{post.discount}}</span>
       </div>
+    </div>
+    <!-- details and buttons -->
+      <div class="p-offer-details">
+        <span class="h3">Offer {{indexOfpost+1}}</span><br>
+        <label for="title">Offer Title : </label>
+        <span id="title">{{post.title}}</span><br>
+        <label for="title">Offer Description : </label>
+        <span id="title">{{post.discount}}</span><br>
+        <label for="title">Template : </label>
+        <span id="title">{{post.templateName}}</span><br>
+        <button class="btn btn-success" (click)="editPost(indexOfpost,post.templateName)">Edit</button>
+        <button class="btn btn-danger" (click)="deletePost(indexOfpost)">Delete</button>
+      </div>
+    </div>
+  </div>
       </div>

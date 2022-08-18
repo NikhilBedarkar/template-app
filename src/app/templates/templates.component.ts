@@ -13,7 +13,6 @@ export class TemplatesComponent implements OnInit {
 
   ngOnInit(): void {
     this.templates=JSON.parse(localStorage.getItem('templates')!);
-    console.log(this.templates);
     
   }
 

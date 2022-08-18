@@ -8,6 +8,7 @@ import { PostsComponent } from './posts/posts.component';
 import { OfferFormComponent } from './offer-form/offer-form.component';
 import { FormsModule } from '@angular/forms';
 import { PostComponent } from './post/post.component';
+import { EditPostComponent } from './edit-post/edit-post.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PostComponent } from './post/post.component';
     TemplatesComponent,
     PostsComponent,
     OfferFormComponent,
-    PostComponent
+    PostComponent,
+    EditPostComponent
   ],
   imports: [
     BrowserModule,
