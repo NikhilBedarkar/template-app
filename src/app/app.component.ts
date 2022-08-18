@@ -20,9 +20,9 @@ export class AppComponent {
   path: '../assets/YellowFruit.png'},
   ];
   posts = [{
-    templateName:"teal",
-    title:"discount offer",
-    discount:"20% Discount"
+    templateName:"houseOffer",
+    title:"Exciting discounts on Houses!",
+    discount:"5-10 % Discount(terms & conditions apply*)"
   }]
 
 
